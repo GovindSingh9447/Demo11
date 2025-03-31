@@ -149,5 +149,18 @@ CREATE TABLE inventory (
 
 
 
+curl -X POST \
+  http://localhost:8081/products \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "name": "Example Product",
+    "description": "This is a sample product.",
+    "price": 29.99,
+    "imageUrl": "http://example.com/image.jpg",
+    "category": "Electronics",
+    "stock": 100
+  }'
+
+
 
 
