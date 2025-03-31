@@ -162,5 +162,23 @@ curl -X POST \
   }'
 
 
+curl -X PUT \
+  http://localhost:8081/products/1 \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "name": "Updated Product Name",
+    "description": "Updated product description.",
+    "price": 39.99,
+    "imageUrl": "http://example.com/updated-image.jpg",
+    "category": "Updated Category",
+    "stock": 50
+  }'
+
+
+
+  curl -X DELETE http://localhost:8081/products/1
+
+
+  
 
 
